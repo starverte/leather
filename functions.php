@@ -283,3 +283,5 @@ function leather_hide_meta_boxes() {
 add_action( 'admin_menu' , 'leather_hide_meta_boxes' );
 
 add_theme_support( 'post-thumbnails' );
+
+add_editor_style( 'editor-style.css' );
