@@ -59,7 +59,7 @@ get_header(); ?>
                         <input type="hidden" name="currency_code" value="USD">
                         
                         <!-- Provide a dropdown menu option field, without prices. -->
-                        <input type="hidden" name="on0" value="Bag Color">Bag Color<br />
+                        <input type="hidden" name="on0" value="Bag Color"><h3>Bag Color</h3>
                             <select name="os0">
                                 <option
                                     value="Select a color">-- Select a color--
@@ -74,9 +74,9 @@ get_header(); ?>
                                 <option value="Bone">Bone</option>
                                 <option value="Burgundy">Burgundy</option>
                                 <option value="Olive">Olive</option>
-                            </select> <br />
+                            </select>
     
-                        <input type="hidden" name="on1" value="Tool Color">Tool Color<br />
+                        <input type="hidden" name="on1" value="Tool Color"><h3>Tool Color</h3>
                             <select name="os1">
                                 <option
                                     value="Select a color">-- Select a color--
@@ -85,12 +85,12 @@ get_header(); ?>
                                 <option value="Red">Red</option>
                                 <option value="Olive">Olive</option>
                                 <option value="Dark Brown">Dark Brown</option>
-                            </select> <br />
+                            </select>
     
     
                     
                         <!-- Display the payment button. -->
-                        <input type="image" name="submit" border="0"
+                        <input type="image" id="paypal" name="submit" border="0"
                             src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
                             alt="PayPal - The safer, easier way to pay online">
                         <img alt="" border="0" width="1" height="1"
