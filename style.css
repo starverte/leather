@@ -486,13 +486,16 @@ img.alignnone,
 	border: 1px solid #ddd;
 }
 
+
+/* Tables
+-------------------------------- */
+
 table {
 	display: table;
 	border-collapse: separate;
 	line-height: 2em;
 	width: 100%;
 }
-
 thead {
 	display: table-header-group;
 	vertical-align: middle;
@@ -513,11 +516,14 @@ tbody {
 	display: table-row-group;
 	vertical-align: middle;
 }
-
 tfoot {
 	display: table-footer-group;
 	vertical-align: middle;
 }
+
+
+/* =Single Item Page
+-------------------------------------------------------------- */
 
 .sp_item .entry-title {
 	clear: right;
@@ -538,6 +544,11 @@ tfoot {
 	margin: 18px 0;
 	text-align: center;
 }
+
+
+/* Add to Cart
+-------------------------------- */
+
 #price {
 	background: url(img/tag.png);
 	background-size: 74px 30px;
@@ -559,7 +570,15 @@ tfoot {
 	border-radius: 5px;
 	padding: 1em;
 }
-
+form h3{
+	padding: 0.5em 0;
+}
+select {
+	margin-bottom: 0.5em;
+}
+#paypal {
+	margin: 0.5em 0 -0.5em 70px;
+}
 
 /* =Sidebar
 -------------------------------------------------------------- */
