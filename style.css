@@ -522,7 +522,7 @@ tfoot {
 }
 
 
-/* =Single Item Page
+/* =Sparks Store
 -------------------------------------------------------------- */
 
 .sp_item .entry-title {
@@ -579,6 +579,25 @@ select {
 #paypal {
 	margin: 0.5em 0 -0.5em 70px;
 }
+
+
+/* Department page
+-------------------------------- */
+#dep-item {
+	border: 1px solid #f0e2d1;
+	padding: 5px;
+	margin-bottom: 15px;
+}
+#dep-item:hover {
+	border: 1px solid #815a18;
+	text-decoration: none;
+}
+.price {
+	color: #815a18;
+	float: right;
+	font-family: 'Strait', sans-serif;
+}
+
 
 /* =Sidebar
 -------------------------------------------------------------- */

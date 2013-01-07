@@ -10,18 +10,10 @@ get_header(); ?>
             
                 <section id="primary" class="grid_10 alpha">
 
-  	    <?php if ( have_posts() ) : ?>
+		    <?php if ( have_posts() ) : ?>
             
-            			<header class="page-header">
-                            <h1 class="page-title"><?php
-                                printf( __( 'Category Archives: %s', 'leather' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-                            ?></h1>
-        
-                            <?php
-                                $category_description = category_description();
-                                if ( ! empty( $category_description ) )
-                                    echo apply_filters( 'category_archive_meta', '<div class="category-archive-meta">' . $category_description . '</div>' );
-                            ?>
+            		<header class="page-header">
+                            <h1 class="page-title"><?php single_term_title(); ?></h1>
                         </header>
         
                         <?php /* Start the Loop */ ?>
@@ -43,7 +35,7 @@ get_header(); ?>
         
                         <article id="post-0" class="grid_10 post no-results not-found">
                             <header class="entry-header">
-                                <h1 class="entry-title"><?php _e( 'Nothing Found', 'leather' ); ?></h1>
+                                <h1 class="entry-title"><?php _e( 'Nothing here', 'leather' ); ?></h1>
                             </header><!-- .entry-header -->
         
                             <div class="entry-content">
