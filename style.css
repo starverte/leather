@@ -458,6 +458,15 @@ img.alignnone,
 	margin: 0.5em;
 	max-width: 560px;
 }
+#primary img {
+	padding: 0 0 20px 0;
+}
+.caption {
+	float: right;
+	position: relative;
+	top: 370px;
+	right: 10px;
+}
 
 
 /* Comments
