@@ -84,9 +84,9 @@ function leather_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Related', 'leather' ),
-		'id' => 'related',
-		'description' => __( 'Related items', 'leather' ),
+		'name' => __( 'Items Sidebar', 'leather' ),
+		'id' => 'items',
+		'description' => __( 'Displayed on single item pages and department pages', 'leather' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h1 class="widget-title">',
