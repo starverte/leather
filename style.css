@@ -621,3 +621,11 @@ select {
 	padding: 5px;
 	text-align: left;
 }
+.swatch {
+	margin: 0 5px 5px 0;
+	float: left;
+	text-align: center;
+}
+.swatches {
+	padding: 0 20px;
+}

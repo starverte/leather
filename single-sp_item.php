@@ -100,7 +100,7 @@ get_header(); ?>
 				</aside>
 
 			<?php do_action( 'before_sidebar' ); ?>
-			<?php if ( ! dynamic_sidebar( 'sidebar' ) ) : ?>
+			<?php if ( ! dynamic_sidebar( 'items' ) ) : ?>
 
 				<aside id="archives" class="widget">
 					<h1 class="widget-title"><?php _e( 'Archives', 'toolbox' ); ?></h1>

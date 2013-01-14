@@ -284,4 +284,150 @@ add_action( 'admin_menu' , 'leather_hide_meta_boxes' );
 
 add_theme_support( 'post-thumbnails' );
 
-add_editor_style( 'editor-style.css' );
+add_editor_style( 'editor-style.css' );add_editor_style( 'editor-style.css' );
+
+add_action( 'widgets_init', 'leather_colors' );
+
+
+function leather_colors() {
+	register_widget( 'Colors_Widget' );
+	register_widget('Tool_Colors_Widget');
+}
+
+class Colors_Widget extends WP_Widget {
+
+	function Colors_Widget() {
+		$widget_ops = array( 'classname' => 'colors', 'description' => __('A widget that displays the color swatches', 'colors') );
+		
+		$control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'colors-widget' );
+		
+		$this->WP_Widget( 'colors-widget', __('Colors Widget', 'colors'), $widget_ops, $control_ops );
+	}
+	
+	function widget( $args, $instance ) {
+		extract( $args );
+
+		//Our variables from the widget settings.
+		$title = apply_filters('widget_title', $instance['title'] );
+		$name = $instance['name'];
+		$show_info = isset( $instance['show_info'] ) ? $instance['show_info'] : false;
+
+		echo $before_widget;
+
+		// Display the widget title 
+		if ( $title )
+			echo $before_title . $title . $after_title;
+
+		$directory = get_template_directory_uri(); ?>
+        
+        <div class="swatches">
+        
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/black.png" width="75" height="75" /></dt><dd>Black</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/brandy.png" width="75" height="75" /></dt><dd>Brandy</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/dkbrown.png" width="75" height="75" /></dt><dd>Dark Brown</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/navy.png" width="75" height="75" /></dt><dd>Navy</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/red.png" width="75" height="75" /></dt><dd>Red</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/tobacco.png" width="75" height="75" /></dt><dd>Tobacco</dd></dl>
+        
+        </div>
+		
+        <?php 
+		
+		echo $after_widget;
+	}
+
+	//Update the widget 
+	 
+	function update( $new_instance, $old_instance ) {
+		$instance = $old_instance;
+
+		//Strip tags from title and name to remove HTML 
+		$instance['title'] = strip_tags( $new_instance['title'] );
+
+		return $instance;
+	}
+
+	
+	function form( $instance ) {
+
+		//Set up some default widget settings.
+		$defaults = array( 'title' => __('Colors', 'colors'), 'show_info' => true );
+		$instance = wp_parse_args( (array) $instance, $defaults ); ?>
+
+		<p>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e('Title:', 'colors'); ?></label>
+			<input id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" style="width:100%;" />
+		</p>
+
+	<?php
+	}
+}
+
+class Tool_Colors_Widget extends WP_Widget {
+
+	function Tool_Colors_Widget() {
+		$widget_ops = array( 'classname' => 'tool-colors', 'description' => __('A widget that displays the tool color swatches', 'tool-colors') );
+		
+		$control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'tool-colors-widget' );
+		
+		$this->WP_Widget( 'tool-colors-widget', __('Tool Colors Widget', 'tool-colors'), $widget_ops, $control_ops );
+	}
+	
+	function widget( $args, $instance ) {
+		extract( $args );
+
+		//Our variables from the widget settings.
+		$title = apply_filters('widget_title', $instance['title'] );
+		$name = $instance['name'];
+		$show_info = isset( $instance['show_info'] ) ? $instance['show_info'] : false;
+
+		echo $before_widget;
+
+		// Display the widget title 
+		if ( $title )
+			echo $before_title . $title . $after_title;
+
+		$directory = get_template_directory_uri(); ?>
+        
+        <div class="swatches">
+        
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/blacktool.png" width="75" height="75" /></dt><dd>Black</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/brandytool.png" width="75" height="75" /></dt><dd>Brandy</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/dkbrowntool.png" width="75" height="75" /></dt><dd>Dark Brown</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/navytool.png" width="75" height="75" /></dt><dd>Navy</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/redtool.png" width="75" height="75" /></dt><dd>Red</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/tobaccotool.png" width="75" height="75" /></dt><dd>Tobacco</dd></dl>
+        
+        </div>
+		
+        <?php 
+		
+		echo $after_widget;
+	}
+
+	//Update the widget 
+	 
+	function update( $new_instance, $old_instance ) {
+		$instance = $old_instance;
+
+		//Strip tags from title and name to remove HTML 
+		$instance['title'] = strip_tags( $new_instance['title'] );
+
+		return $instance;
+	}
+
+	
+	function form( $instance ) {
+
+		//Set up some default widget settings.
+		$defaults = array( 'title' => __('Tool Colors', 'tool-colors'), 'show_info' => true );
+		$instance = wp_parse_args( (array) $instance, $defaults ); ?>
+
+		<p>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e('Title:', 'tool-colors'); ?></label>
+			<input id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" style="width:100%;" />
+		</p>
+
+	<?php
+	}
+}
