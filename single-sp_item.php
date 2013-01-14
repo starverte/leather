@@ -18,7 +18,8 @@ get_header(); ?>
         
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-                    <?php the_post_thumbnail('large'); ?>
+                    <?php the_post_thumbnail_caption();
+			  the_post_thumbnail( 'large' ); ?>
 
                     <header class="entry-header">
                         <div id="ref"><p><?php echo $item_ref; ?></p></div><h1 class="entry-title"><?php the_title(); ?></h1>
