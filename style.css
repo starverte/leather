@@ -621,6 +621,10 @@ select {
 	padding: 5px;
 	text-align: left;
 }
+.widget_nav_menu li {
+	font: 1.25em Strait, sans-serif;
+	padding-bottom: 0.5em;
+}
 .swatch {
 	margin: 0 5px 5px 0;
 	float: left;
