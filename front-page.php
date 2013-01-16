@@ -22,5 +22,12 @@ get_header(); ?>
                 </section><!-- end #primary -->
 
                 
-<?php get_sidebar(); ?>
+		<div id="secondary" class="grid_5 push_1" role="complementary">
+			<?php do_action( 'before_sidebar' ); ?>
+			
+				<aside id="archives" class="widget">
+					<h1 class="widget-title"><?php _e( 'Browse by Category', 'toolbox' ); ?></h1>
+					<?php wp_nav_menu( array( 'menu_class' => 'widget_nav_menu', 'theme_location' => 'side', 'walker' => new sparks_side_menu ) ); ?>
+				</aside>
+		</div><!-- #secondary .widget-area -->
 <?php get_footer(); ?>
