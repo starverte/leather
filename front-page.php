@@ -27,7 +27,7 @@ get_header(); ?>
 			
 				<aside id="archives" class="widget">
 					<h1 class="widget-title"><?php _e( 'Browse by Category', 'toolbox' ); ?></h1>
-					<?php wp_nav_menu( array( 'theme_location' => 'side', 'walker' => new sparks_side_menu ) ); ?>
+					<?php wp_nav_menu( array( 'menu_class' => 'widget_nav_menu', 'theme_location' => 'side', 'walker' => new sparks_side_menu ) ); ?>
 				</aside>
 				
 
