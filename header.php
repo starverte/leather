@@ -76,7 +76,7 @@
                     <h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'leather' ); ?></h1>
                     <div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'leather' ); ?>"><?php _e( 'Skip to content', 'leather' ); ?></a></div>
                     
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'walker' => new sparks_nav_menu ) ); ?>
                 </nav><!-- #access -->
             </div>
             
