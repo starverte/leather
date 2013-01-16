@@ -63,7 +63,7 @@
     <div class="container_16" id="page">
         <header class="grid_16">
             <div class="grid_2 alpha">        
-                <a href="<?php echo home_url( '/' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>           
+                <a href="<?php echo home_url( '/?ref=logo' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>           
             </div>
             <div class="grid_12">
                 <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>" class="alpha grid_11">
@@ -76,7 +76,7 @@
                     <h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'leather' ); ?></h1>
                     <div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'leather' ); ?>"><?php _e( 'Skip to content', 'leather' ); ?></a></div>
                     
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'walker' => new sparks_nav_menu ) ); ?>
                 </nav><!-- #access -->
             </div>
             
