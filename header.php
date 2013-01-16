@@ -63,7 +63,7 @@
     <div class="container_16" id="page">
         <header class="grid_16">
             <div class="grid_2 alpha">        
-                <a href="<?php echo home_url( '/' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>           
+                <a href="<?php echo home_url( '/?ref=logo' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>           
             </div>
             <div class="grid_12">
                 <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>" class="alpha grid_11">
