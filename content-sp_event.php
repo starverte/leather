@@ -26,7 +26,7 @@
                     
                     	<div class="entry-content grid_8 push_1 alpha">
                         	<?php the_content(); ?>
-                        	<a class="directions" href="https://maps.google.com/maps?q=<?php echo $event_loc; ?>">Directions</a>
+                        	<a class="directions" href="https://maps.google.com/maps?q=<?php echo $event_loc; ?>" target="_blank">Directions</a>
                     	</div><!-- .entry-content -->
                     	
 		   	 <footer id="entry-meta">
