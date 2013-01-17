@@ -66,30 +66,25 @@ get_header(); ?>
                         <!-- Provide a dropdown menu option field, without prices. -->
                         <input type="hidden" name="on0" value="Bag Color"><h3>Bag Color</h3>
                             <select name="os0">
-                                <option
-                                    value="Select a color">-- Select a color--
+                                <option value="Select a color">-- Select a color--
+                                <option value="Black">Black</option>
                                 <option value="Brandy">Brandy</option>
                                 <option value="Dark Brown">Dark Brown</option>
-                                <option value="Black">Black</option>
-                                <option value="Navy">Navy</option>
-                                <option value="Red">Red</option>
                                 <option value="Purple">Purple</option>
-                                <option value="Turquoise">Turquoise</option>
+                                <option value="Red">Red</option>        
                                 <option value="Tobacco">Tobacco</option>
-                                <option value="Bone">Bone</option>
-                                <option value="Burgundy">Burgundy</option>
-                                <option value="Olive">Olive</option>
                             </select>
     
                         <input type="hidden" name="on1" value="Tool Color"><h3>Tool Color</h3>
                             <select name="os1">
-                                <option
-                                    value="Select a color">-- Select a color--
-                    <option value="Black">Black</option>
+                                <option value="Select a color">-- Select a color--
+                                <option value="No tooling">No tooling</option>
+                    		<option value="Black">Black</option>
                                 <option value="Brandy">Brandy</option>
-                                <option value="Red">Red</option>
-                                <option value="Olive">Olive</option>
                                 <option value="Dark Brown">Dark Brown</option>
+                                <option value="Purple">Purple</option>
+                                <option value="Red">Red</option>        
+                                <option value="Tobacco">Tobacco</option>
                             </select>
     
     
