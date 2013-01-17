@@ -533,12 +533,21 @@ tfoot {
 
 /* =Sparks Events
 -------------------------------------------------------------- */
+.date {
+	border: 1px solid #815a18;
+	border-radius: 2px;
+	text-align: center;
+}
 .month {
+	background: #815a18;
+	color: #fff;
 	font: 12px 'Strait', sans-serif;
+	padding: 0.25em 0.5em;
 	text-transform: uppercase;
 }
 .day {
 	font: 18px 'Strait', sans-serif;
+	padding: 0.25em 0.5em;
 }
 
 
