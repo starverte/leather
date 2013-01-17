@@ -326,7 +326,7 @@ class Colors_Widget extends WP_Widget {
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/black.png" width="75" height="75" /></dt><dd>Black</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/brandy.png" width="75" height="75" /></dt><dd>Brandy</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/dkbrown.png" width="75" height="75" /></dt><dd>Dark Brown</dd></dl>
-            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/navy.png" width="75" height="75" /></dt><dd>Navy</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/navy.png" width="75" height="75" /></dt><dd>Purple</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/red.png" width="75" height="75" /></dt><dd>Red</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/tobacco.png" width="75" height="75" /></dt><dd>Tobacco</dd></dl>
         
@@ -395,7 +395,7 @@ class Tool_Colors_Widget extends WP_Widget {
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/blacktool.png" width="75" height="75" /></dt><dd>Black</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/brandytool.png" width="75" height="75" /></dt><dd>Brandy</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/dkbrowntool.png" width="75" height="75" /></dt><dd>Dark Brown</dd></dl>
-            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/navytool.png" width="75" height="75" /></dt><dd>Navy</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/navytool.png" width="75" height="75" /></dt><dd>Purple</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/redtool.png" width="75" height="75" /></dt><dd>Red</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/tobaccotool.png" width="75" height="75" /></dt><dd>Tobacco</dd></dl>
         
