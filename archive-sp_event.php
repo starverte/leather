@@ -14,10 +14,6 @@ get_header(); ?>
                 <section id="primary" class="grid_10 alpha">
 
   	    <?php if ( have_posts() ) : ?>
-            
-            	<header class="page-header">
-                            <h1 class="page-title">Upcoming Events</h1>
-                        </header>
                         
                         <?php rewind_posts(); ?>
         
