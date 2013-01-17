@@ -15,20 +15,8 @@ get_header(); ?>
 
   	    <?php if ( have_posts() ) : ?>
             
-            			<header class="page-header">
-                            <h1 class="page-title">
-                                <?php
-                                    if ( is_day() ) :
-                                        printf( __( 'Daily Archives: %s', 'toolbox' ), '<span>' . get_the_date() . '</span>' );
-                                    elseif ( is_month() ) :
-                                        printf( __( 'Monthly Archives: %s', 'toolbox' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
-                                    elseif ( is_year() ) :
-                                        printf( __( 'Yearly Archives: %s', 'toolbox' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
-                                    else :
-                                        _e( 'Archives', 'toolbox' );
-                                    endif;
-                                ?>
-                            </h1>
+            	<header class="page-header">
+                            <h1 class="page-title">Upcoming Events</h1>
                         </header>
                         
                         <?php rewind_posts(); ?>
@@ -41,7 +29,7 @@ get_header(); ?>
                                  * If you want to overload this in a child theme then include a file
                                  * called content-___.php (where ___ is the Post Format name) and that will be used instead.
                                  */
-                                get_template_part( 'content', get_post_format() );
+                                get_template_part( 'content', 'sp_event' );
                             ?>
         
                         <?php endwhile; ?>
