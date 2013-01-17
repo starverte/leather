@@ -16,8 +16,8 @@
 			
                     <header class="entry-header">
                     	<div class="event-date">
-                    		<span class="month"><?php echo $start_mth; ?></span>
-                    		<span class="day"><?php echo $start_day; ?></span>
+                    		<div class="month"><?php echo $start_mth; ?></div>
+                    		<div class="day"><?php echo $start_day; ?></div>
                     	</div>
                         <h1 class="entry-title"><?php the_title(); ?></h1>
                         <p class="event-time"><?php echo $start_time; ?> to <?php echo $end_time; ?>
