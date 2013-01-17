@@ -531,6 +531,17 @@ tfoot {
 }
 
 
+/* =Sparks Events
+-------------------------------------------------------------- */
+.month {
+	font: 12px 'Strait', sans-serif;
+	text-transform: uppercase;
+}
+.day {
+	font: 18px 'Strait', sans-serif;
+}
+
+
 /* =Sparks Store
 -------------------------------------------------------------- */
 
