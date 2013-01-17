@@ -317,9 +317,9 @@ article.format-link p {
 -------------------------------------------------------------- */
 .entry-title {
 	font-size: 2em;
-	padding-bottom: 0.575em;
 }
-.more-link {
+.more-link,
+.directions{
 	background: #c4a06b;
 	border-radius: 2px;
 	display: block;	
@@ -329,7 +329,8 @@ article.format-link p {
 	float: right;
 	margin: 0 10px 10px 0;
 }
-.more-link:hover {
+.more-link:hover,
+.directions:hover {
 	background: #b38a4c;
 	text-decoration: none;
 }
@@ -528,6 +529,36 @@ tbody {
 tfoot {
 	display: table-footer-group;
 	vertical-align: middle;
+}
+
+
+/* =Sparks Events
+-------------------------------------------------------------- */
+
+.sp_event .entry-header {
+	min-height: 50px;
+}
+.sp_event .entry-title {
+	padding: 0 0 0.2em 0;
+}
+.event-date {
+	border: 1px solid #815a18;
+	border-radius: 2px;
+	text-align: center;
+}
+.month {
+	background: #815a18;
+	color: #fff;
+	font: 12px 'Strait', sans-serif;
+	padding: 0.25em 0.5em;
+	text-transform: uppercase;
+}
+.day {
+	font: 18px 'Strait', sans-serif;
+	padding: 0.25em 0.5em;
+}
+.event-time {
+	font-style: oblique;
 }
 
 
