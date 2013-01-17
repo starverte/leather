@@ -535,6 +535,10 @@ tfoot {
 /* =Sparks Events
 -------------------------------------------------------------- */
 
+.sp_event {
+	border-bottom: 0;
+	min-height: 100px;
+}
 .sp_event .entry-header {
 	min-height: 50px;
 }
