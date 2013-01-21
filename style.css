@@ -677,3 +677,32 @@ select {
 .swatches {
 	padding: 0 20px;
 }
+.upcoming-events .event-date,
+.upcoming-events .entry-header,
+.upcoming-events .entry-content,
+.upcoming-events .directions {
+	display: inline;
+	float: left;
+	font-size: 0.875em;
+	margin-left: 10px;
+ 	margin-right: 10px;
+}
+.upcoming-events .event-date {
+	margin-left: 0;
+ 	width: 40px;
+}
+.upcoming-events .entry-header {
+ 	margin-right: 0;
+ 	width: 160px;
+}
+.upcoming-events .entry-content {
+	margin-left: 0;
+	width: 160px;
+	position: relative;
+	left: 60px;
+}
+.upcoming-events .directions {
+	margin-right: 0;
+	width: 30px;
+	text-align: center;
+}
