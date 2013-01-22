@@ -4,7 +4,9 @@
 body {
   margin-top: 1em;
   margin-bottom: 1em;
-  width: 960px;
+  width: 580px;
+  margin-left: 1em;
+  min-width: 0;
 }
 
 .grid_4 {
