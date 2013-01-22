@@ -45,6 +45,7 @@
     
     ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/reset.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/text.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/960.css">
