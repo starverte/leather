@@ -706,7 +706,10 @@ select {
 	width: 30px;
 	text-align: center;
 }
-.link-widget .widget-title:hover {
+.link-widget a:hover {
+	text-decoration: none;
+}
+.link-widget a:hover .widget-title {
 	background: #fff;
 	background-image: -ms-linear-gradient(right, #FFFFFF 0%, #f0e2d1 100%); /* IE10 Consumer Preview */
 	background-image: -moz-linear-gradient(right, #FFFFFF 0%, #f0e2d1 100%); /* Mozilla Firefox */ 
@@ -715,5 +718,4 @@ select {
 	background-image: -webkit-linear-gradient(right, #FFFFFF 0%, #f0e2d1 100%); /* Webkit (Chrome 11+) */ 
 	background-image: linear-gradient(to left, #FFFFFF 0%, #f0e2d1 100%); /* W3C Markup, IE10 Release Preview */
 	color: #815A18;
-	text-decoration: none;
 }
