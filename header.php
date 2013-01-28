@@ -69,7 +69,7 @@
             <div class="grid_12">
                 <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>" class="alpha grid_11">
                     <div><label class="screen-reader-text" for="s">Search for:</label>
-                        <input class="alpha grid_9 tall_33" type="text" value="" name="s" id="s">
+                        <input class="alpha grid_9 tall_33" type="text" value="<?php echo trim( get_search_query() ); ?>" name="s" id="s">
                         <input class="grid_2 omega tall_33" type="submit" id="searchsubmit" value="Search">
                     </div>
                 </form>
