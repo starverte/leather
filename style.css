@@ -706,9 +706,11 @@ select {
 	width: 30px;
 	text-align: center;
 }
+.search .sp_item a:hover,
 .link-widget a:hover {
 	text-decoration: none;
 }
+.search .sp_item a:hover .entry-title,
 .link-widget a:hover .widget-title {
 	background: #fff;
 	background-image: -ms-linear-gradient(right, #FFFFFF 0%, #f0e2d1 100%); /* IE10 Consumer Preview */
