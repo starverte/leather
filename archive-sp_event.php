@@ -12,10 +12,7 @@
 get_header(); ?>
             
                 <section id="primary" class="grid_10 alpha">
-
-  	    <?php if ( have_posts() ) : ?>
-                        
-                        <?php rewind_posts(); ?>
+            	<?php the_events(); ?>
         
                         <?php /* Start the Loop */ ?>
                         <?php while ( have_posts() ) : the_post(); ?>
@@ -29,20 +26,6 @@ get_header(); ?>
                             ?>
         
                         <?php endwhile; ?>
-        
-                    <?php else : ?>
-        
-                        <article id="post-0" class="grid_10 post no-results not-found">
-                            <header class="entry-header">
-                                <h1 class="entry-title"><?php _e( 'Nothing Found', 'leather' ); ?></h1>
-                            </header><!-- .entry-header -->
-        
-                            <div class="entry-content">
-                                <p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'leather' ); ?></p>
-                            </div><!-- .entry-content -->
-                        </article><!-- #post-0 -->
-        
-                    <?php endif; ?> 
 
                 </section><!-- end #primary -->
 
