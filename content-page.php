@@ -13,7 +13,7 @@
                     </header><!-- .entry-header -->
                     
                     <div class="entry-content">
-						<?php the_content(); ?>
+			<?php the_content('Read more'); ?>
                         <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'leather' ), 'after' => '</div>' ) ); ?>
                         <?php edit_post_link( __( 'Edit', 'leather' ), '<span class="edit-link">', '</span>' ); ?>
                     </div><!-- .entry-content -->
