@@ -63,42 +63,45 @@
 <body <?php body_class(); ?>>
     <div class="container_16" id="page">
         <header class="grid_16">
-            <div class="grid_2 alpha">        
-                <a href="<?php echo home_url( '/?ref=logo' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>           
-            </div>
-            <div class="grid_12">
-                <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>" class="alpha grid_11">
+            <hgroup>        
+                <a class="grid_3 alpha" href="<?php echo home_url( '/?ref=logo' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
+		<h3 class="grid_10" id="tagline">Fine Leather Goods Handcrafted in Colorado since 1974</h3>
+                <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>" class="omega grid_3">
                     <div><label class="screen-reader-text" for="s">Search for:</label>
-                        <input class="alpha grid_9 tall_33" type="text" value="<?php echo trim( get_search_query() ); ?>" name="s" id="s">
-                        <input class="grid_2 omega tall_33" type="submit" id="searchsubmit" value="Search">
+                        <input class="alpha grid_3 tall_33 omega" type="text" value="<?php echo trim( get_search_query() ); ?>" name="s" id="s" placeholder="Search">
+                        <input type="submit" id="searchsubmit" value="Search">
                     </div>
-                </form>
-                <nav id="access" role="navigation">
+                </form>       
+            </hgroup>
+	    
+            <div id="main-nav">
+                <nav class="grid_14 alpha" id="access" role="navigation">
                     <h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'leather' ); ?></h1>
                     <div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'leather' ); ?>"><?php _e( 'Skip to content', 'leather' ); ?></a></div>
-                    
                     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'walker' => new sparks_nav_menu ) ); ?>
                 </nav><!-- #access -->
-            </div>
             
-            <form class="grid_2 omega" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            
+			<form class="grid_2 omega" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
-    			<?php 	$settings = get_option('steel_options');
+    				<?php 	$settings = get_option('steel_options');
 						$merch_id = $settings['merch_id']; ?>
             
-                <!-- Identify your business so that you can collect the payments. -->
-                <input type="hidden" name="business" value="<?php echo $merch_id; ?>">
+                		<!-- Identify your business so that you can collect the payments. -->
+                		<input type="hidden" name="business" value="<?php echo $merch_id; ?>">
             
-                <!-- Specify a PayPal Shopping Cart View Cart button. -->
-                <input type="hidden" name="cmd" value="_cart">
-                <input type="hidden" name="display" value="1">
+                		<!-- Specify a PayPal Shopping Cart View Cart button. -->
+                		<input type="hidden" name="cmd" value="_cart">
+                		<input type="hidden" name="display" value="1">
             
-                <!-- Display the View Cart button. -->
-                <input type="image" id="c" name="submit" border="0"
-                    src="<?php echo get_template_directory_uri(); ?>/img/cart2.png"
-                    alt="PayPal - The safer, easier way to pay online">
-            </form>
+                		<!-- Display the View Cart button. -->
+                		<input type="image" id="c" name="submit" border="0"
+                    			src="<?php echo get_template_directory_uri(); ?>/img/cart2.png"
+                    			alt="PayPal - The safer, easier way to pay online">
+            		</form>
+
+	    </div>
 
         </header>
-        <h3 class="grid_16" id="tagline">Fine Leather Goods Handcrafted in Colorado since 1974</h3>
+        
         <div id="main" class="grid_16">
