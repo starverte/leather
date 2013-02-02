@@ -80,7 +80,7 @@ body {
 .screen-reader-text {
 	display: none;
 }
-#tagline, #main {
+#main {
 	margin-bottom: 15px;
 }
 a {
@@ -174,8 +174,6 @@ article.format-link p {
 #s, #searchsubmit, #m, #c {
 	border-radius: 2px;
 	border: none;
-	font-family: 'Strait', sans-serif;
-	font-size: 21px;
 }
 #arrdown,
 #c img,
@@ -183,33 +181,28 @@ article.format-link p {
 	float: left;
 }
 #tagline {
-	font-size: 1.5em;
+	clear: none;
+	font-size: 2em;
 	font-variant: small-caps;
-	text-align: center;
+	margin-top: 79px;
+	padding: 0;
+	margin-bottom: 0.5em;
 }
 
 
 /* Search
 -------------------------------- */
 
-#searchform label {
+#searchform label,
+#searchsubmit {
 	display: none;
 }
 
 #s {
-	background: #f0e2d1;	
+	border: 1px solid #815a18;
 	color: #815a18;
-	margin: 16px 0 0 0;
-	padding: 5px 0 5px 5px;
+	padding: 5px;
 }
-#searchsubmit {
-	background: #c4a06b;	
-	color: #fff;
-	cursor: pointer;
-	margin: 16px 0 0 0;
-	padding: 5px 0 5px 0;
-}
-#searchsubmit:hover,
 #m:hover {
 	background: #b38a4c;
 }
@@ -218,18 +211,11 @@ article.format-link p {
 -------------------------------- */
 
 #access {
-	background: #c4a06b;
-	color: #fff;
-	display: block;
-	float: left;
-	margin: 16px 0 0 -20px;
-	height: 32px;
-	border-radius: 2px;
-	width: 30px;
-}
-
-#access:hover {
 	background: #b38a4c;
+	color: #fff;
+	height: 33px;
+	border-radius: 2px;
+	margin-bottom: 1.5em;
 }
 #access ul {
 	list-style: none;
@@ -245,15 +231,11 @@ article.format-link p {
 	line-height: 2em;
 	padding: 0 1em;
 	text-decoration: none;
-	width: 30px;
-}
-#access a {
-	background: #c4a06b;
+	line-height: 33px;
+	font-family: 'Strait', sans-serif;
+	font-size: 18px;
 	color: #fff;
-	padding: 5px 0 5px 0;
-	text-align: center;
 	border-radius: 2px;
-	height: 23px;
 }
 #access ul ul {
 	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -263,7 +245,6 @@ article.format-link p {
 	float: left;
 	position: absolute;
 	top: 33px;
-	right: 0;
 	z-index: 99999;
 }
 #access ul ul ul {
@@ -271,8 +252,7 @@ article.format-link p {
 	top: 0;
 }
 #access ul ul a {
-	background: #b38a4c;
-	font: 1.2em 'Strait', sans-serif;
+	background: #9f7531;
 	line-height: 1em;
 	padding: .5em .5em .5em 1em;
 	width: 7em;
@@ -281,10 +261,10 @@ article.format-link p {
 }
 #access li:hover > a,
 #access ul ul :hover > a {
-	background: #b38a4c;
+	background: #9f7531;
 }
 #access ul ul a:hover {
-	background: #9f7531;
+	background: #815a18;
 }
 #access ul li:hover > ul {
 	display: block;
@@ -298,7 +278,6 @@ article.format-link p {
 	background: #815a18;
 	color: #fff;
 	height: 33px;
-	margin: 16px 0 0 0;
 	text-align: center;
 	text-decoration: none;
 }
