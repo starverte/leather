@@ -39,7 +39,7 @@ get_header(); ?>
 
 		<div id="secondary" class="grid_5 push_1" role="complementary">
 
-				<aside id="add2cart" class="widget">
+		    <aside id="add2cart" class="widget">
                 
                 	<div id="price"><p>$<?php echo $item_price; ?></p></div>
                 
@@ -98,6 +98,12 @@ get_header(); ?>
                     </form>
 
 				</aside>
+
+			<aside id="social-buttons" class="widget">
+				<div class="social">
+					<?php tweet_this('none'); pin_it(); like_this(array('data_layout' => 'button_count')); ?>
+				</div>
+			</aside>
 
 			<?php do_action( 'before_sidebar' ); ?>
 			<?php if ( ! dynamic_sidebar( 'items' ) ) : ?>
