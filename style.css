@@ -607,6 +607,27 @@ select {
 }
 
 
+/* Social Media
+-------------------------------- */
+
+.widget .social {
+	position: relative;
+	left: 35px;
+}
+.twitter-share-button,
+.pin-it-button,
+.fb-like {
+	padding: 0 5px;
+}
+.twitter-share-button {
+	position: relative;
+	top: -1px;
+}
+.fb-like {
+	top: -4px;
+}
+
+
 /* Department page
 -------------------------------- */
 #dep-item {
