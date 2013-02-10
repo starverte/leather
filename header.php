@@ -5,7 +5,7 @@
 * Displays all of the <head> section and everything up till <div id="main">
 *
 * @package Leather
-* @since Leather 0.1
+* @since Leather 1.0.1
 */
 ?><!DOCTYPE html>
 <!--[if IE 6]>
