@@ -6,7 +6,7 @@
  * @since Leather 1.0
  */
 
-get_header(); ?>
+get_header(); ?>	
             
                 <section id="primary" class="grid_10">
         
@@ -46,12 +46,10 @@ get_header(); ?>
                     <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr"
             method="post">
 
-			<?php 	$settings = get_option('steel_options');
-				$merch_id = $settings['merch_id']; ?>
-			
+			<?php $options = get_option('sparks_options'); ?>			
                     
                         <!-- Identify your business so that you can collect the payments. -->
-                        <input type="hidden" name="business" value="<?php echo $merch_id; ?>">
+                        <input type="hidden" name="business" value="<?php if (isset($options['merch_id'])) { echo $options["merch_id"]; } ?>">
                     
                         <!-- Specify a PayPal Shopping Cart Add to Cart button. -->
                         <input type="hidden" name="cmd" value="_cart">
@@ -59,7 +57,7 @@ get_header(); ?>
                     
                         <!-- Specify details about the item that buyers will purchase. -->
                         <input type="hidden" name="item_name"
-                            value="<?php echo $item_ref; ?>">
+                            value="<?php the_title(); ?>">
                         <input type="hidden" name="amount" value="<?php echo $item_price; ?>">
                         <input type="hidden" name="currency_code" value="USD">
                         
