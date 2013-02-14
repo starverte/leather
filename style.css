@@ -447,7 +447,7 @@ img.alignnone,
 	top: 370px;
 	right: 10px;
 }
-.sp_item .wp-post-image {
+.sp_product .wp-post-image {
 	max-height: 360px;
 }
 
@@ -551,7 +551,7 @@ tfoot {
 /* =Sparks Store
 -------------------------------------------------------------- */
 
-.sp_item .entry-title {
+.sp_product .entry-title {
 	clear: right;
 }
 #ref {
@@ -672,7 +672,7 @@ select {
 	margin-bottom: 10px;
 }
 .widget-title,
-.sp_item .entry-title {
+.sp_product .entry-title {
 	background: #815a18;
 	background-image: -ms-linear-gradient(right, #FFFFFF 0%, #815A18 100%); /* IE10 Consumer Preview */
 	background-image: -moz-linear-gradient(right, #FFFFFF 0%, #815A18 100%); /* Mozilla Firefox */ 
@@ -729,11 +729,11 @@ select {
 	width: 30px;
 	text-align: center;
 }
-.search .sp_item a:hover,
+.search .sp_product a:hover,
 .link-widget a:hover {
 	text-decoration: none;
 }
-.search .sp_item a:hover .entry-title,
+.search .sp_product a:hover .entry-title,
 .link-widget a:hover .widget-title {
 	background: #fff;
 	background-image: -ms-linear-gradient(right, #FFFFFF 0%, #f0e2d1 100%); /* IE10 Consumer Preview */
