@@ -514,6 +514,40 @@ tfoot {
 }
 
 
+/* Columns
+-------------------------------- */
+
+.columns {
+	display: inline;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 580px;
+}
+.columns:first-child {
+	margin-left: 0;
+}
+.columns:last-child {
+	margin-right: 0;
+}
+.sp_product .columns ul {
+	list-style: none;
+}
+.column {
+	float: left;
+	padding: 1em 0;
+}
+.columns-2 .column {
+	width: 280px;
+}
+.columns-3 .column {
+	width: 160px;
+}
+.columns-3:last-child {
+	width: 220px;
+}
+
+
 /* =Sparks Events
 -------------------------------------------------------------- */
 
