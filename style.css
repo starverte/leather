@@ -532,6 +532,7 @@ tfoot {
 }
 .sp_product .columns ul {
 	list-style: none;
+	margin-left: none;
 }
 .column {
 	float: left;
