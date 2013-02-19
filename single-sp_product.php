@@ -27,6 +27,7 @@ get_header(); ?>
                     
                     <div class="entry-content">
                         <?php the_content(); ?>
+                        <?php the_dimensions(); ?>
                     </div><!-- .entry-content -->
 		    <footer id="entry-meta">
                         <?php edit_post_link( __( 'Edit', 'leather' ), '<span class="edit-link">', '</span>' ); ?>
