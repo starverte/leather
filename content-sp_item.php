@@ -11,7 +11,14 @@
         
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="grid_10">
 
-                    <a href="<?php the_permalink(); ?>?ref=thumb" class="grid_3 alpha"><?php the_post_thumbnail(); ?></a>
+                    <a href="<?php the_permalink(); ?>?ref=thumb" class="grid_3 alpha">
+						<?php if (has_post_thumbnail()) {
+							the_post_thumbnail();
+						}
+						else { ?>
+							<img width="580" height="360" src="<?php echo get_template_directory_uri(); ?>/img/none.png" class="attachment-post-thumbnail wp-post-image" alt="Image not available"> <?php
+						}?>
+                   	</a>
 
                     <div class="grid_7 omega" style="min-height:150px;">
 			<a href="<?php the_permalink(); ?>?ref=title"><header class="entry-header">
