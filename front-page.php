@@ -11,12 +11,7 @@ get_header(); ?>
             
                 <section id="primary" class="grid_10 alpha">
 
-		    <div class="royalSlider rsDefault">
-    			<img class="rsImg" src="http://fortcollinscreative.com/lewnme/wp-content/uploads/2013/01/65.jpg" alt="cover" />
-    			<img class="rsImg" src="http://fortcollinscreative.com/lewnme/wp-content/uploads/2013/01/145.jpg" />
-                        <img class="rsImg" src="http://fortcollinscreative.com/lewnme/wp-content/uploads/2013/01/145cf.jpg" />
-                        <img class="rsImg" src="http://fortcollinscreative.com/lewnme/wp-content/uploads/2013/01/SacTote.jpg" />
-		    </div>	
+		    <?php nivo_slider('splash'); ?>	
 
                 </section><!-- end #primary -->
 
