@@ -93,6 +93,8 @@ a:hover {
 img,
 .wp-caption {
 	height: auto;
+	width: auto;
+	max-height: 100%;
 	max-width: 100%;
 }
 embed {
@@ -447,9 +449,6 @@ img.alignnone,
 	top: 370px;
 	right: 10px;
 }
-.sp_product .wp-post-image {
-	max-height: 360px;
-}
 
 
 /* Comments
@@ -589,6 +588,14 @@ tfoot {
 .sp_product .entry-title {
 	clear: right;
 }
+.sp_product .thumb-container {
+	height: 360px;
+}
+.archive .thumb-container {
+	clear: left;
+	height: 160px;
+	margin-bottom: 1em;
+}
 #ref {
 	background: url(img/bag.png);
 	background-size: 38px 45px;
@@ -639,6 +646,26 @@ select {
 }
 #paypal {
 	margin: 0.5em 0 -0.5em 70px;
+}
+
+/* Social Media	  	
+--------------------------------- */
+	  	
+.widget .social {
+	position: relative;  	
+	left: 35px;
+}
+.twitter-share-button,
+.pin-it-button,
+.fb-like {
+	padding: 0 5px;
+}
+.twitter-share-button {
+	position: relative;
+	top: -1px;
+}
+.fb-like {
+	top: -4px;
 }
 
 
@@ -714,6 +741,9 @@ select {
 }
 .swatches {
 	padding: 0 20px;
+}
+.swatch img {
+	width: 75px;
 }
 .upcoming-events .event-date,
 .upcoming-events .entry-header,
