@@ -11,12 +11,12 @@
         
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="grid_10">
 
-                    <a href="<?php the_permalink(); ?>?ref=thumb" class="grid_3 alpha">
+                    <a href="<?php the_permalink(); ?>?ref=thumb" class="grid_3 thumb-container alpha">
 						<?php if (has_post_thumbnail()) {
 							the_post_thumbnail();
 						}
 						else { ?>
-							<img width="580" height="360" src="<?php echo get_template_directory_uri(); ?>/img/none.png" class="attachment-post-thumbnail wp-post-image" alt="Image not available"> <?php
+							<img src="<?php echo get_template_directory_uri(); ?>/img/none.png" class="attachment-post-thumbnail wp-post-image" alt="Image not available"> <?php
 						}?>
                    	</a>
 

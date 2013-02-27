@@ -4,7 +4,7 @@ Theme URI: http://www.lewnme.com
 Description: Custom theme developed for Lew 'n' Me.
 Author: Star Verte LLC
 Author URI: http://starverte.com
-Version: 1.0.1
+Version: 1.0.2
 Tags: 
 
 */
@@ -93,6 +93,8 @@ a:hover {
 img,
 .wp-caption {
 	height: auto;
+	width: auto;
+	max-height: 100%;
 	max-width: 100%;
 }
 embed {
@@ -447,9 +449,6 @@ img.alignnone,
 	top: 370px;
 	right: 10px;
 }
-.sp_product .wp-post-image {
-	max-height: 360px;
-}
 
 
 /* Comments
@@ -588,6 +587,14 @@ tfoot {
 
 .sp_product .entry-title {
 	clear: right;
+}
+.sp_product .thumb-container {
+	height: 360px;
+}
+.archive .thumb-container {
+	clear: left;
+	height: 160px;
+	margin-bottom: 1em;
 }
 #ref {
 	background: url(img/bag.png);
@@ -734,6 +741,9 @@ select {
 }
 .swatches {
 	padding: 0 20px;
+}
+.swatch img {
+	width: 75px;
 }
 .upcoming-events .event-date,
 .upcoming-events .entry-header,
