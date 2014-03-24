@@ -4,18 +4,23 @@
  *
  * Contains the closing of the id=main div and all content after
  *
- * @package Leather
- * @since Leather 1.0
+ * @package Flint/Leather
+ * @since 2.0.0
  */
 ?>
 
-            </div><!-- end #main -->
-            
-            <footer class="grid_16">
-                <h6 id="colophon">©<?php echo date( 'Y' ); ?> Lew 'n' Me. Custom theme design by <a href="http://starverte.com">Star Verte LLC</a>. Powered by <a href="http://wordpress.org">WordPress</a></h6>
-            </footer>
-            
-        </div><!-- end #page -->
-    <?php wp_footer(); ?>    
-    </body>
-</html>
+</div><!-- #page -->
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info container">
+    <div id="custom-footer">
+      <?php flint_custom_footer(); ?>
+    </div>
+    <div id="credits">
+      <?php $theme = wp_get_theme(); ?>
+      Proudly powered by <a href="http://wordpress.org/" title="A Semantic Personal Publishing Platform">WordPress</a> | Theme: <a href="<?php echo $theme->get( 'ThemeURI' ) ?>"><?php echo $theme ?></a> by <?php echo $theme->get( 'Author' ) ?>
+    </div>
+  </div><!-- .site-info -->
+</footer><!-- #colophon -->
+
+<?php get_footer( 'close' );
