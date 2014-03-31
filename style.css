@@ -33,18 +33,18 @@ Tags: custom-background, custom-header, custom-menu, flexible-header, one-column
 
 /* Buttons */
 .btn-primary {
-  border-color: #8f6f3d;
-  background-color: #b38a4c;
   color: #fff;
+  background-color: #b38a4c;
+  border-color: #8f6f3d;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  border-color: #8f6f3d;
-  background-color: #8f6f3d;
   color: #fff;
+  background-color: #8f6f3d;
+  border-color: #8f6f3d;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -66,12 +66,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  border-color: #8f6f3d;
   background-color: #b38a4c;
+  border-color: #8f6f3d;
 }
 .btn-primary .badge {
-  background-color: #fff;
   color: #b38a4c;
+  background-color: #fff;
 }
 
 /* Panels */
@@ -79,9 +79,9 @@ fieldset[disabled] .btn-primary.active {
   border-color: #b38a4c;
 }
 .panel-primary > .panel-heading {
-  border-color: #b38a4c;
-  background-color: #b38a4c;
   color: #fff;
+  background-color: #b38a4c;
+  border-color: #b38a4c;
 }
 .panel-primary > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #b38a4c;
@@ -96,8 +96,8 @@ fieldset[disabled] .btn-primary.active {
 
 .site-branding h2 {
   margin-top: 70px;
-  font-variant: small-caps;
   font-size: 2em;
+  font-variant: small-caps;
 }
 
 
