@@ -37,6 +37,7 @@ $title = get_the_title();
       <div class="entry-summary">
         <p><strong>Price</strong>: $<?php echo steel_product_meta('price'); ?></p>
         <?php the_excerpt(); ?>
+        <div class="clearfix"></div>
         <p><strong>Dimensions</strong>: <?php echo steel_product_dimensions(); ?></p>
         <a class="btn btn-primary hidden-xs" href="<?php echo $permalink ?>" style="float:right;margin-top:-1.25em;"><?php the_title(); ?> Details</a>
         <a class="btn btn-block btn-primary visible-xs" href="<?php echo $permalink ?>"><?php the_title(); ?> Details</a>
@@ -44,6 +45,7 @@ $title = get_the_title();
       <?php else : ?>
       <div class="entry-content">
         <?php flint_the_content(); ?>
+        <div class="clearfix"></div>
         Dimensions: <?php echo steel_product_dimensions(); ?>
       </div><!-- .entry-content -->
       <?php endif; ?>
