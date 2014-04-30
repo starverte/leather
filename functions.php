@@ -47,12 +47,12 @@ class Colors_Widget extends WP_Widget {
         
         <div class="panel-body">
         
-            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/black.png" width="75" height="75" /></dt><dd>Black</dd></dl>
-            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/brandy.png" width="75" height="75" /></dt><dd>Brandy</dd></dl>
-            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/dkbrown.png" width="75" height="75" /></dt><dd>Dk. Brown</dd></dl>
-            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/navy.png" width="75" height="75" /></dt><dd>Purple</dd></dl>
-            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/red.png" width="75" height="75" /></dt><dd>Red</dd></dl>
-            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/tobacco.png" width="75" height="75" /></dt><dd>Tobacco</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/black.png" width="75" height="75" /></dt><dd>Black</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/brandy.png" width="75" height="75" /></dt><dd>Brandy</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/dkbrown.png" width="75" height="75" /></dt><dd>Dk. Brown</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/navy.png" width="75" height="75" /></dt><dd>Purple</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/red.png" width="75" height="75" /></dt><dd>Red</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/tobacco.png" width="75" height="75" /></dt><dd>Tobacco</dd></dl>
         
         </div>
     
@@ -114,12 +114,12 @@ class Tool_Colors_Widget extends WP_Widget {
         
         <div class="panel-body">
         
-            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/blacktool.png" width="75" height="75" /></dt><dd>Black</dd></dl>
-            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/brandytool.png" width="75" height="75" /></dt><dd>Brandy</dd></dl>
-            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/dkbrowntool.png" width="75" height="75" /></dt><dd>Dk. Brown</dd></dl>
-            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/navytool.png" width="75" height="75" /></dt><dd>Purple</dd></dl>
-            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/redtool.png" width="75" height="75" /></dt><dd>Red</dd></dl>
-            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/colors/tobaccotool.png" width="75" height="75" /></dt><dd>Tobacco</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/blacktool.png" width="75" height="75" /></dt><dd>Black</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/brandytool.png" width="75" height="75" /></dt><dd>Brandy</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/dkbrowntool.png" width="75" height="75" /></dt><dd>Dk. Brown</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/navytool.png" width="75" height="75" /></dt><dd>Purple</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/redtool.png" width="75" height="75" /></dt><dd>Red</dd></dl>
+            <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/tobaccotool.png" width="75" height="75" /></dt><dd>Tobacco</dd></dl>
         
         </div>
     
