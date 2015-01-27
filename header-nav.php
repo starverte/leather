@@ -20,7 +20,7 @@
           </button>
           <a class="navbar-brand visible-xs-block" href="<?php echo esc_url( home_url() ); ?>"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a>
         </div><!-- .navbar-header -->
-        
+
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav', 'fallback_cb' => false, 'walker' => new Flint_Bootstrap_Menu ) ); ?>
@@ -37,7 +37,7 @@
               <input type="text" class="form-control" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" placeholder="Search" style="width: 200px;">
             </div>
           </form>
-          
+
         </div><!-- .navbar-collapse -->
     </nav><!-- .navbar -->
   </div><!-- .container -->

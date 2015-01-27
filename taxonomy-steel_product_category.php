@@ -49,9 +49,9 @@ get_header(); ?>
     <?php endif; ?>
 
     </div><!-- #content -->
-    
+
     <?php flint_get_widgets('right_steel_product'); ?>
-    
+
   </section><!-- #primary -->
 
 <?php flint_get_widgets('footer'); ?>

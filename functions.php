@@ -24,12 +24,12 @@ class Colors_Widget extends WP_Widget {
 
   function Colors_Widget() {
     $widget_ops = array( 'classname' => 'colors', 'description' => __('A widget that displays the color swatches', 'colors') );
-    
+
     $control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'colors-widget' );
-    
+
     $this->WP_Widget( 'colors-widget', __('Leather: Colors Widget', 'colors'), $widget_ops, $control_ops );
   }
-  
+
   function widget( $args, $instance ) {
     extract( $args );
 
@@ -39,40 +39,40 @@ class Colors_Widget extends WP_Widget {
 
     echo '<div class="panel panel-default">';
 
-    // Display the widget title 
+    // Display the widget title
     if ( $title )
       echo '<div class="panel-heading"><h3 class="panel-title">'.$title.'</h3></div>';
 
     $directory = get_stylesheet_directory_uri(); ?>
-        
+
         <div class="panel-body">
-        
+
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/black.png" width="75" height="75" /></dt><dd>Black</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/brandy.png" width="75" height="75" /></dt><dd>Brandy</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/dkbrown.png" width="75" height="75" /></dt><dd>Dk. Brown</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/navy.png" width="75" height="75" /></dt><dd>Purple</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/red.png" width="75" height="75" /></dt><dd>Red</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/tobacco.png" width="75" height="75" /></dt><dd>Tobacco</dd></dl>
-        
+
         </div>
-    
-        <?php 
-    
+
+        <?php
+
     echo '</div>';
   }
 
-  //Update the widget 
-   
+  //Update the widget
+
   function update( $new_instance, $old_instance ) {
     $instance = $old_instance;
 
-    //Strip tags from title and name to remove HTML 
+    //Strip tags from title and name to remove HTML
     $instance['title'] = strip_tags( $new_instance['title'] );
 
     return $instance;
   }
 
-  
+
   function form( $instance ) {
 
     //Set up some default widget settings.
@@ -91,12 +91,12 @@ class Tool_Colors_Widget extends WP_Widget {
 
   function Tool_Colors_Widget() {
     $widget_ops = array( 'classname' => 'tool-colors', 'description' => __('A widget that displays the tool color swatches', 'tool-colors') );
-    
+
     $control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'tool-colors-widget' );
-    
+
     $this->WP_Widget( 'tool-colors-widget', __('Leather: Tool Colors Widget', 'tool-colors'), $widget_ops, $control_ops );
   }
-  
+
   function widget( $args, $instance ) {
     extract( $args );
 
@@ -106,40 +106,40 @@ class Tool_Colors_Widget extends WP_Widget {
 
     echo '<div class="panel panel-default">';
 
-    // Display the widget title 
+    // Display the widget title
     if ( $title )
       echo '<div class="panel-heading"><h3 class="panel-title">'.$title.'</h3></div>';
 
     $directory = get_stylesheet_directory_uri(); ?>
-        
+
         <div class="panel-body">
-        
+
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/blacktool.png" width="75" height="75" /></dt><dd>Black</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/brandytool.png" width="75" height="75" /></dt><dd>Brandy</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/dkbrowntool.png" width="75" height="75" /></dt><dd>Dk. Brown</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/navytool.png" width="75" height="75" /></dt><dd>Purple</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/redtool.png" width="75" height="75" /></dt><dd>Red</dd></dl>
             <dl class="swatch"><dt><img src="<?php echo $directory; ?>/img/tobaccotool.png" width="75" height="75" /></dt><dd>Tobacco</dd></dl>
-        
+
         </div>
-    
-        <?php 
-    
+
+        <?php
+
     echo '</div>';
   }
 
-  //Update the widget 
-   
+  //Update the widget
+
   function update( $new_instance, $old_instance ) {
     $instance = $old_instance;
 
-    //Strip tags from title and name to remove HTML 
+    //Strip tags from title and name to remove HTML
     $instance['title'] = strip_tags( $new_instance['title'] );
 
     return $instance;
   }
 
-  
+
   function form( $instance ) {
 
     //Set up some default widget settings.
