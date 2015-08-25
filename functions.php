@@ -27,7 +27,7 @@ class Colors_Widget extends WP_Widget {
 
     $control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'colors-widget' );
 
-    $this->WP_Widget( 'colors-widget', __('Leather: Colors Widget', 'colors'), $widget_ops, $control_ops );
+    $this->__construct( 'colors-widget', __('Leather: Colors Widget', 'colors'), $widget_ops, $control_ops );
   }
 
   function widget( $args, $instance ) {
@@ -94,7 +94,7 @@ class Tool_Colors_Widget extends WP_Widget {
 
     $control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'tool-colors-widget' );
 
-    $this->WP_Widget( 'tool-colors-widget', __('Leather: Tool Colors Widget', 'tool-colors'), $widget_ops, $control_ops );
+    $this->__construct( 'tool-colors-widget', __('Leather: Tool Colors Widget', 'tool-colors'), $widget_ops, $control_ops );
   }
 
   function widget( $args, $instance ) {
@@ -156,3 +156,4 @@ class Tool_Colors_Widget extends WP_Widget {
 }
 
 remove_filter('get_the_excerpt','wp_trim_excerpt');
+
