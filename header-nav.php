@@ -23,7 +23,13 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav', 'fallback_cb' => false, 'walker' => new Flint_Bootstrap_Menu ) ); ?>
+          <?php
+          if ( class_exists( 'Flint_Walker_Nav_Menu_Navbar' ) ) {
+            wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav', 'fallback_cb' => false, 'walker' => new Flint_Walker_Nav_Menu_Navbar ) );
+          } else {
+            wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav', 'fallback_cb' => false, 'walker' => new Flint_Bootstrap_Menu ) );
+          }
+          ?>
           <form class="navbar-form navbar-right" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
             <div class="form-group">
               <input type="hidden" name="business" value="ZPV342PLN7X9S">
