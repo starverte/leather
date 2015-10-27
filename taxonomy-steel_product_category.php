@@ -7,11 +7,11 @@
  */
 
 get_header(); ?>
-<?php flint_get_widgets('header'); ?>
+<?php flint_get_sidebar('header'); ?>
 
   <section id="primary" class="content-area container">
 
-  <?php flint_get_widgets('left'); ?>
+  <?php flint_get_sidebar('left'); ?>
 
     <div id="content" class="site-content<?php if ( is_active_sidebar( 'left' ) ) { echo ' col-lg-6 col-md-6'; } else { echo ' col-lg-9 col-md-9'; } ?>" role="main">
 
@@ -50,9 +50,9 @@ get_header(); ?>
 
     </div><!-- #content -->
 
-    <?php flint_get_widgets('right_steel_product'); ?>
+    <?php flint_get_sidebar('right_steel_product'); ?>
 
   </section><!-- #primary -->
 
-<?php flint_get_widgets('footer'); ?>
+<?php flint_get_sidebar('footer'); ?>
 <?php get_footer(); ?>
